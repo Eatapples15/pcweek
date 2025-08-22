@@ -40,7 +40,7 @@ html, body {
     width: 80%;
     max-width: 900px;
     height: auto;
-    opacity: 0.07; /* Aumentato per migliore visibilità */
+    opacity: 0.07;
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
 }
 
@@ -199,7 +199,7 @@ html, body {
     transform: scale(1.05);
 }
 
-/* ======== OVERLAY INFO GENERALI (NUOVO) ======== */
+/* ======== OVERLAY INFO GENERALI ======== */
 .info-overlay {
     position: fixed;
     top: 0;
