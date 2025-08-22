@@ -22,9 +22,7 @@ html, body {
     color: var(--text-color);
 }
 
-/* ============================================================= */
-/* == MODIFICA PRINCIPALE: SFONDO CON IMMAGINE LOCALE       == */
-/* ============================================================= */
+/* ======== SFONDO CON IMMAGINE E ANIMAZIONE ======== */
 .map-container {
     position: relative;
     width: 100%;
@@ -33,8 +31,8 @@ html, body {
     justify-content: center;
     align-items: center;
     
-    /* ASSICURATI CHE IL TUO FILE SI CHIAMI "sfondo.jpg" E SIA NELLA STESSA CARTELLA */
-    background-image: linear-gradient(rgba(16, 20, 25, 0.85), rgba(16, 20, 25, 0.95)), url('sfondo.jpg');
+    /* Assicurati che l'immagine 'sfondo.jpg' sia nella stessa cartella */
+    background-image: linear-gradient(rgba(16, 20, 25, 0.85), rgba(16, 20, 25, 0.95)), url('sfondo.jpg?v=1');
     
     background-size: 110%; 
     background-position: center;
@@ -42,7 +40,7 @@ html, body {
     animation: slow-zoom 40s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Animazione di zoom lento per lo sfondo (effetto Ken Burns) */
+/* Animazione di zoom lento per lo sfondo */
 @keyframes slow-zoom {
     0% {
         background-size: 110%;
