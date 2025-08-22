@@ -23,7 +23,7 @@ html, body {
 }
 
 /* ============================================================= */
-/* == MODIFICA PRINCIPALE: SFONDO CON IMMAGINE E ANIMAZIONE == */
+/* == MODIFICA PRINCIPALE: SFONDO CON IMMAGINE LOCALE       == */
 /* ============================================================= */
 .map-container {
     position: relative;
@@ -33,10 +33,10 @@ html, body {
     justify-content: center;
     align-items: center;
     
-    /* CAMBIA QUI L'URL CON L'IMMAGINE CHE PREFERISCI */
-    background-image: linear-gradient(rgba(16, 20, 25, 0.85), rgba(16, 20, 25, 0.95)), url('https://images.unsplash.com/photo-1629005597654-7a3536a38fac?q=80&w=2074&auto=format&fit=crop');
+    /* ASSICURATI CHE IL TUO FILE SI CHIAMI "sfondo.jpg" E SIA NELLA STESSA CARTELLA */
+    background-image: linear-gradient(rgba(16, 20, 25, 0.85), rgba(16, 20, 25, 0.95)), url('sfondo.jpg');
     
-    background-size: 110%; /* Partenza zoom leggermente ingrandita */
+    background-size: 110%; 
     background-position: center;
     background-repeat: no-repeat;
     animation: slow-zoom 40s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
