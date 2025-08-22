@@ -3,128 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settimana Protezione Civile 2025 - Basilicata | Un Futuro Sicuro</title>
+    <title>Settimana Protezione Civile 2025 - Basilicata | Insieme, più sicuri</title>
     
     <link rel="stylesheet" href="style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
-    <header class="hero-section">
-        <div class="hero-background-logo" style="background-image: url('IMAGE_FILE_105840.png');"></div>
-        
-        <nav class="main-nav">
-            <div class="container nav-container">
-                <span class="nav-logo-text">Protezione Civile Basilicata</span>
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="#" class="logo-link">
+                <img src="IMAGE_FILE_105840.png" alt="Logo Protezione Civile Basilicata" class="logo">
+                <span>Protezione Civile<br>Basilicata</span>
+            </a>
+            <nav class="main-nav">
                 <ul>
-                    <li><a href="#rischi">Conosci i Rischi</a></li>
-                    <li><a href="#eventi">Partecipa</a></li>
-                    <li><a href="#diventa-volontario" class="nav-button">Diventa Volontario</a></li>
+                    <li><a href="#rischi">I Rischi</a></li>
+                    <li><a href="#eventi">Eventi</a></li>
+                    <li><a href="#diventa-volontario" class="btn btn-primary">Partecipa</a></li>
                 </ul>
-            </div>
-        </nav>
-        
-        <div class="container hero-content">
-            <h1>Un territorio più sicuro inizia da te.</h1>
-            <p class="subtitle">Settimana della Protezione Civile 2025. Scopri, impara, proteggi.</p>
-            <a href="#rischi" class="btn btn-primary"><i class="fas fa-arrow-down"></i> Inizia da qui</a>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section id="rischi" class="risk-section">
+        <section class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <span class="hero-subtitle">Settimana della Protezione Civile 2025</span>
+                    <h1>La sicurezza è un gioco di squadra.</h1>
+                    <p>Una comunità informata è una comunità più forte. Scopri con noi i rischi del nostro territorio e impara a proteggere te stesso e chi ami.</p>
+                    <a href="#rischi" class="btn btn-primary">Scopri come <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="hero-image-wrapper">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="rischi" class="risks-section">
             <div class="container">
-                <div class="section-title">
-                    <span>I RISCHI</span>
-                    <h2>La conoscenza è la migliore prevenzione</h2>
+                <div class="section-header">
+                    <h2>Conoscere per Prevenire</h2>
+                    <p>La Basilicata è una terra stupenda ma fragile. Clicca su un rischio per vedere il video e imparare le buone pratiche di comportamento.</p>
                 </div>
                 
-                <div class="risk-grid">
-                    <div class="risk-card">
-                        <div class="risk-card-image" style="background-image: url('https://images.unsplash.com/photo-1629005597654-7a3536a38fac?q=80&w=1974&auto=format&fit=crop');"></div>
-                        <div class="risk-card-content">
-                            <i class="fas fa-house-crack risk-icon"></i>
-                            <h3>Rischio Sismico</h3>
-                            <p>La Basilicata è una terra che trema. Impara le azioni che possono salvare la tua vita e quella degli altri.</p>
-                            <a href="https://youtu.be/esempio" target="_blank" class="btn-video">Guarda il Video <i class="fas fa-play"></i></a>
+                <div class="risk-cards-container">
+                    <a href="https://youtu.be/esempio" target="_blank" class="risk-card">
+                        <div class="risk-card-icon seismic">
+                            <i class="fas fa-house-crack"></i>
                         </div>
-                    </div>
+                        <h3>Rischio Sismico</h3>
+                        <p>Non farti trovare impreparato. La prevenzione salva la vita.</p>
+                        <span class="video-link">Guarda il video <i class="fas fa-play-circle"></i></span>
+                    </a>
                     
-                    <div class="risk-card">
-                        <div class="risk-card-image" style="background-image: url('https://images.unsplash.com/photo-1600277343685-cde7a738814a?q=80&w=1965&auto=format&fit=crop');"></div>
-                        <div class="risk-card-content">
-                            <i class="fas fa-cloud-showers-heavy risk-icon"></i>
-                            <h3>Rischio Idrogeologico</h3>
-                            <p>Frane e alluvioni sono sempre più frequenti. La cura del territorio e le giuste precauzioni sono essenziali.</p>
-                            <a href="https://youtu.be/esempio" target="_blank" class="btn-video">Guarda il Video <i class="fas fa-play"></i></a>
+                    <a href="https://youtu.be/esempio" target="_blank" class="risk-card">
+                        <div class="risk-card-icon hydro">
+                           <i class="fas fa-cloud-showers-heavy"></i>
                         </div>
-                    </div>
+                        <h3>Rischio Idrogeologico</h3>
+                        <p>Prendersi cura del territorio è la prima difesa contro frane e alluvioni.</p>
+                        <span class="video-link">Guarda il video <i class="fas fa-play-circle"></i></span>
+                    </a>
 
-                    <div class="risk-card">
-                        <div class="risk-card-image" style="background-image: url('https://images.unsplash.com/photo-1590881289565-6b4d36a49594?q=80&w=1974&auto=format&fit=crop');"></div>
-                        <div class="risk-card-content">
-                            <i class="fas fa-fire-flame-curved risk-icon"></i>
-                            <h3>Rischio Incendi</h3>
-                            <p>Un patrimonio naturale inestimabile è minacciato dal fuoco. Il 99% degli incendi è causato dall'uomo. Fai la tua parte.</p>
-                             <a href="https://youtu.be/esempio" target="_blank" class="btn-video">Guarda il Video <i class="fas fa-play"></i></a>
+                    <a href="https://youtu.be/esempio" target="_blank" class="risk-card">
+                        <div class="risk-card-icon fire">
+                            <i class="fas fa-fire-flame-curved"></i>
                         </div>
-                    </div>
+                        <h3>Rischio Incendi</h3>
+                        <p>Un piccolo gesto di attenzione può salvare i nostri boschi.</p>
+                         <span class="video-link">Guarda il video <i class="fas fa-play-circle"></i></span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="eventi" class="events-section">
-            <div class="container events-container">
-                <div class="events-image">
-                    </div>
-                <div class="events-text">
-                    <div class="section-title">
-                        <span>GLI EVENTI</span>
-                        <h2>Vivi una settimana da protagonista</h2>
-                    </div>
-                    <p>Non restare a guardare. Partecipa agli incontri, alle dimostrazioni e ai workshop organizzati in tutta la Basilicata. Tocca con mano il mondo della Protezione Civile.</p>
-                    <a href="#" class="btn btn-secondary">Scopri il Calendario Completo</a>
+        <section id="eventi" class="cta-section">
+            <div class="container cta-container">
+                 
+                <div class="cta-text">
+                    <h2>Partecipa agli eventi nella tua città</h2>
+                    <p>Questa settimana le piazze si animano con stand informativi, esercitazioni e incontri con i volontari. Vieni a trovarci, ti aspettiamo!</p>
+                    <a href="#" class="btn btn-secondary">Scopri il programma completo</a>
                 </div>
             </div>
         </section>
-
+        
         <section id="diventa-volontario" class="volunteer-section">
-            <div class="container volunteer-container">
-                 <div class="volunteer-text">
-                    <div class="section-title">
-                        <span>FAI LA DIFFERENZA</span>
-                        <h2>Entra nella nostra squadra</h2>
-                    </div>
-                    <p>Il volontariato in Protezione Civile è una scelta di cuore e di responsabilità. È un impegno che arricchisce te e la tua comunità. Scopri come unirti a noi.</p>
-                    <a href="#" class="btn btn-primary">Diventa Volontario Ora</a>
+            <div class="container">
+                 <div class="section-header">
+                    <h2>Fai la tua parte. Diventa volontario.</h2>
+                    <p>Essere volontario significa mettere il proprio tempo e le proprie capacità al servizio degli altri. È un'esperienza che cambia la vita. La tua e quella di chi aiuterai.</p>
+                     <a href="#" class="btn btn-primary">Voglio saperne di più</a>
                 </div>
-                <div class="volunteer-image">
-                   </div>
             </div>
         </section>
-
     </main>
     
     <footer class="main-footer">
         <div class="container footer-container">
             <div class="footer-info">
-                <h4>Protezione Civile - Regione Basilicata</h4>
-                <p>Un impegno quotidiano per la sicurezza di tutti.</p>
+                 <img src="IMAGE_FILE_105840.png" alt="Logo Protezione Civile Basilicata" class="footer-logo">
+                <p>&copy; 2025 Regione Basilicata - Dipartimento Protezione Civile.<br>Tutti i diritti riservati.</p>
             </div>
             <div class="footer-social">
                 <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Regione Basilicata - Tutti i diritti riservati.</p>
         </div>
     </footer>
 
