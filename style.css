@@ -7,8 +7,6 @@
     --text-muted: #8892b0;
     --border-color: rgba(255, 238, 0, 0.2);
     --info-border-color: rgba(0, 242, 255, 0.2);
-    --map-fill-color: #212832; /* Colore di riempimento della mappa */
-    --map-stroke-color: #404a5a; /* Colore dei limiti comunali */
     
     --font-display: 'Inter', sans-serif;
     --font-mono: 'Roboto Mono', monospace;
@@ -24,7 +22,9 @@ html, body {
     color: var(--text-color);
 }
 
-/* ======== CONTENITORE PRINCIPALE ======== */
+/* ============================================================= */
+/* == MODIFICA PRINCIPALE: SFONDO CON IMMAGINE E ANIMAZIONE == */
+/* ============================================================= */
 .map-container {
     position: relative;
     width: 100%;
@@ -32,25 +32,26 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    /* CAMBIA QUI L'URL CON L'IMMAGINE CHE PREFERISCI */
+    background-image: linear-gradient(rgba(16, 20, 25, 0.85), rgba(16, 20, 25, 0.95)), url('https://images.unsplash.com/photo-1629005597654-7a3536a38fac?q=80&w=2074&auto=format&fit=crop');
+    
+    background-size: 110%; /* Partenza zoom leggermente ingrandita */
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slow-zoom 40s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.map-background {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 900px;
-    height: auto;
-    opacity: 0.3; /* Leggermente più visibile */
+/* Animazione di zoom lento per lo sfondo (effetto Ken Burns) */
+@keyframes slow-zoom {
+    0% {
+        background-size: 110%;
+    }
+    100% {
+        background-size: 100%;
+    }
 }
 
-/* Stile per i limiti comunali dentro la mappa SVG */
-.map-background path {
-    fill: var(--map-fill-color);
-    stroke: var(--map-stroke-color);
-    stroke-width: 0.5; /* Spessore delle linee comunali */
-}
 
 /* ======== HEADER ======== */
 .main-header-link {
