@@ -4,18 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const riskData = {
         seismic: {
             title: 'RISCHIO SISMICO',
-            description: 'La terra trema, la consapevolezza protegge. Un terremoto non è prevedibile, ma prepararsi è un dovere. Scopri le norme vitali di comportamento.',
-            videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' // SOSTITUISCI CON IL TUO VIDEO
+            description: 'La terra trema, la consapevolezza protegge. Scopri le norme vitali di comportamento per prepararti a un terremoto.',
+            videoUrl: 'https://www.youtube.com/embed/h4_l_dLGk70'
         },
         hydro: {
-            title: 'RISCHIO IDROGEOLOGICO',
-            description: 'Acqua e terra possono diventare una minaccia. Impara a riconoscere i segnali di frane e alluvioni e a proteggere la tua casa e la tua vita.',
-            videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_IDRO' // SOSTITUISCI
+            title: 'RISCHIO ALLUVIONE',
+            description: 'Acqua e terra possono diventare una minaccia. Impara a riconoscere i segnali di alluvioni e a proteggere la tua casa e la tua vita.',
+            videoUrl: 'https://www.youtube.com/embed/KgmvTMTg2PI'
         },
         fire: {
             title: 'RISCHIO INCENDI',
-            description: 'Il fuoco distrugge il nostro patrimonio più prezioso. Il 99% degli incendi è causato dall\'uomo. La tua attenzione è la nostra più grande risorsa.',
-            videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_INCENDI' // SOSTITUISCI
+            description: 'Il fuoco distrugge il nostro patrimonio più prezioso. La tua attenzione è la nostra più grande risorsa contro gli incendi boschivi.',
+            videoUrl: 'https://www.youtube.com/embed/Ul9DTVZMHvw'
         }
     };
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoPlayer = document.getElementById('video-player');
     const closeVideoButton = document.querySelector('.close-video');
 
-    // Nuovi elementi per le Info Generali
+    // Elementi per le Info Generali
     const infoButton = document.getElementById('info-button');
     const infoOverlay = document.getElementById('info-overlay');
     const closeInfoButton = document.querySelector('.close-info');
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', function(e) {
         if (e.target && e.target.classList.contains('btn-video')) {
             const videoUrl = e.target.dataset.video;
-            videoPlayer.src = videoUrl;
+            videoPlayer.src = videoUrl + "?autoplay=1"; // Aggiunto autoplay
             videoOverlay.classList.add('show');
         }
     });
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- NUOVA LOGICA PER LE INFO GENERALI ---
+    // --- LOGICA PER LE INFO GENERALI ---
     infoButton.addEventListener('click', () => {
         infoOverlay.classList.add('show');
     });
