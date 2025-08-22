@@ -7,6 +7,8 @@
     --text-muted: #8892b0;
     --border-color: rgba(255, 238, 0, 0.2);
     --info-border-color: rgba(0, 242, 255, 0.2);
+    --map-fill-color: #212832; /* Colore di riempimento della mappa */
+    --map-stroke-color: #404a5a; /* Colore dei limiti comunali */
     
     --font-display: 'Inter', sans-serif;
     --font-mono: 'Roboto Mono', monospace;
@@ -40,13 +42,19 @@ html, body {
     width: 80%;
     max-width: 900px;
     height: auto;
-    opacity: 0.15; /* AUMENTATA OPACITÀ PER MIGLIORE VISIBILITÀ */
-    filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.5));
+    opacity: 0.3; /* Leggermente più visibile */
+}
+
+/* Stile per i limiti comunali dentro la mappa SVG */
+.map-background path {
+    fill: var(--map-fill-color);
+    stroke: var(--map-stroke-color);
+    stroke-width: 0.5; /* Spessore delle linee comunali */
 }
 
 /* ======== HEADER ======== */
 .main-header-link {
-    text-decoration: none; /* Rimuove la sottolineatura dal link */
+    text-decoration: none;
 }
 .main-header {
     position: absolute;
