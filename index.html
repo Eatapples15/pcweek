@@ -38,29 +38,29 @@
 
     <div class="map-container">
         <svg class="map-background" viewBox="0 0 711 733" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M410.833 732.5L293.167 651.5L251.5 613.833L214.333 588.5L226 564.833L200.667 521.5L169.333 490.667L190.167 457.167L183 438L163.5 423.333L150.167 392.5L138.5 364.5L150.167 353.167L129.333 322.333L101.333 303.167L113 280.5L95.5 259.667L113 238.833L90.8333 222.5L105.833 194.5L132.167 172.5L113 145.167L120.167 107.5L152 70.8333L197.333 58.1667L241 33.1667L316.167 22L361 2.66667L400.333 2.66667L442.833 2.66667L474.167 22L522.333 33.1667L549.333 42.3333L574 61.6667L630.167 61.6667L665.167 107.5L682.333 162L710.333 194.5L688.167 222.5L671 234.167L643 255L617.833 274.667L630.167 298.333L597.5 322.333L586 353.167L548.5 373.667L564.833 410.5L522.333 448.5L503.167 475.833L507.667 495.167L481.333 529.5L460.5 564.833L410.833 588.5L425.833 630.5L410.833 732.5Z" fill="#ffffff"/>
+            <path d="M410.833 732.5L293.167 651.5L251.5 613.833L214.333 588.5L226 564.833L200.667 521.5L169.333 490.667L190.167 457.167L183 438L163.5 423.333L150.167 392.5L138.5 364.5L150.167 353.167L129.333 322.333L101.333 303.167L113 280.5L95.5 259.667L113 238.833L90.8333 222.5L105.833 194.5L132.167 172.5L113 145.167L120.167 107.5L152 70.8333L197.333 58.1667L241 33.1667L316.167 22L361 2.66667L400.333 2.66667L442.833 2.66667L474.167 22L522.333 33.1667L549.333 42.3333L574 61.6667L630.167 61.6667L665.167 107.5L682.333 162L710.333 194.5L688.167 222.5L671 234.167L643 255L617.833 274.667L630.167 298.333L597.5 322.333L586 353.167L548.5 373.667L564.833 410.5L522.333 448.5L503.167 475.833L507.667 495.167L481.333 529.5L460.5 564.833L410.833 588.5L425.833 630.5L410.833 732.5Z" fill="#333A45"/>
         </svg>
         
-        <header class="main-header">
-            <img src="IMAGE_FILE_105840.png" alt="Logo Protezione Civile" class="logo">
-            <div class="title-container">
-                <h1>SETTIMANA PROTEZIONE CIVILE</h1>
-                <span>BASILICATA 2025</span>
-            </div>
-        </header>
+        <a href="https://protezionecivile.regione.basilicata.it/protcivbas/home.jsp" target="_blank" class="main-header-link">
+            <header class="main-header">
+                <img src="IMAGE_FILE_105840.png" alt="Logo Protezione Civile" class="logo">
+                <div class="title-container">
+                    <h1>SETTIMANA PROTEZIONE CIVILE</h1>
+                    <span>BASILICATA 2025</span>
+                </div>
+            </header>
+        </a>
 
         <div class="risk-point" style="top: 40%; left: 30%;">
             <button class="risk-button" data-risk="seismic">
                 <i class="fas fa-house-crack"></i>
             </button>
         </div>
-        
         <div class="risk-point" style="top: 65%; left: 60%;">
             <button class="risk-button" data-risk="hydro">
                 <i class="fas fa-cloud-showers-heavy"></i>
             </button>
         </div>
-
         <div class="risk-point" style="top: 70%; left: 25%;">
             <button class="risk-button" data-risk="fire">
                 <i class="fas fa-fire-flame-curved"></i>
@@ -73,11 +73,9 @@
             </button>
         </div>
 
-
         <div id="info-card" class="info-card">
             <button class="close-card">&times;</button>
-            <div id="card-content">
-                </div>
+            <div id="card-content"></div>
         </div>
     </div>
 
