@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- DATI PER LE FINESTRE ---
     const riskData = {
         seismic: {
             title: 'RISCHIO SISMICO',
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // --- ELEMENTI DEL DOM ---
     const riskButtons = document.querySelectorAll('.risk-button');
     const infoCard = document.getElementById('info-card');
     const cardContent = document.getElementById('card-content');
@@ -27,6 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoPlayer = document.getElementById('video-player');
     const closeVideoButton = document.querySelector('.close-video');
 
+    // Nuovi elementi per le Info Generali
+    const infoButton = document.getElementById('info-button');
+    const infoOverlay = document.getElementById('info-overlay');
+    const closeInfoButton = document.querySelector('.close-info');
+
+    // --- LOGICA PER LE FINESTRE DEI RISCHI ---
     riskButtons.forEach(button => {
         button.addEventListener('click', () => {
             const riskKey = button.dataset.risk;
@@ -48,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         infoCard.classList.remove('show');
     });
     
-    // Event delegation for video button
+    // --- LOGICA PER IL VIDEO PLAYER ---
     document.addEventListener('click', function(e) {
         if (e.target && e.target.classList.contains('btn-video')) {
             const videoUrl = e.target.dataset.video;
@@ -57,15 +65,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    closeVideoButton.addEventListener('click', () => {
+    const closeVideo = () => {
         videoOverlay.classList.remove('show');
         videoPlayer.src = ''; // Interrompe la riproduzione
-    });
-    
+    };
+
+    closeVideoButton.addEventListener('click', closeVideo);
     videoOverlay.addEventListener('click', (e) => {
         if(e.target === videoOverlay) {
-             videoOverlay.classList.remove('show');
-             videoPlayer.src = '';
+             closeVideo();
+        }
+    });
+
+    // --- NUOVA LOGICA PER LE INFO GENERALI ---
+    infoButton.addEventListener('click', () => {
+        infoOverlay.classList.add('show');
+    });
+
+    const closeInfo = () => {
+        infoOverlay.classList.remove('show');
+    };
+
+    closeInfoButton.addEventListener('click', closeInfo);
+    infoOverlay.addEventListener('click', (e) => {
+        if(e.target === infoOverlay) {
+             closeInfo();
         }
     });
 });
